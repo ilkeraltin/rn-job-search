@@ -31,9 +31,12 @@ class App extends React.Component {
             })
           }
         })
-      },
-      
-    }, { lazyLoad: true });
+      }  
+    }, { navigationOptions: {
+          tabBarVisible: false
+        },
+          lazy: true 
+});
 
     return (
       <Provider store={store}>
